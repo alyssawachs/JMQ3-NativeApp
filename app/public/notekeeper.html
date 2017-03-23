@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html>
+
+  <head>
+    <title>Notekeeper</title>
+    <meta name="description" content="A cool thing made with Gomix">
+    <link id="favicon" rel="icon" href="https://gomix.com/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js">
+    </script>
+    <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
+    </script>
+    <script>notes.js</script>
+  </head>
+
+<body> 
+  
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Tasks to Complete</h1>
+	</div><!-- /header -->
+  
+  <div data-role="main" class="ui-content">
+    <form>
+      <div class="ui-field-contain">
+        <input id="title" type="text" placeholder="Add a task" />
+      </div>
+      <div class="ui-field-contain">
+        <textarea id="note" placeholder="What needs to be done?">
+        </textarea>
+      </div>
+      <div class="ui-field-contain">
+        <input id="course" type="text" placeholder="Course" />
+      </div>
+      <div class="ui-field-contain">
+        <input id="date" type="date" placeholder="Date Due" />
+      </div>
+      <div class="ui-grid-a">
+        <div class="ui-block-a">
+          <input id="btnNoThanks" type="button" value="Cancel" />
+        </div>
+        <div>
+          <div class="ui-block-b">
+            <input id="btnAddNote" type="button" value="Add Task" />
+          </div>
+        </div>
+      </div>
+    </form>
+    <ul id="notesList" data-role="listview" data-inset="true" class="ui-listview-inset ui-corner-all ui-shadow">
+      <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child">Your Tasks</li>
+      <li id="noNotes" class="ui-li-static ui-body-inherit ui-last-child">You have no tasks</li>
+    </ul>
+  </div>
+  
+  	<div data-role="footer">
+		<h4>Alyssa Wachs &copy 2017</h4>
+	</div><!-- /footer -->
+	
+</div><!-- /page -->
+
+</body>
+</html>
